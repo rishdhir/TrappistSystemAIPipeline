@@ -1,4 +1,5 @@
 const navLinks = Array.from(document.querySelectorAll(".nav a"));
+const autoplayVideos = Array.from(document.querySelectorAll("video[autoplay]"));
 const syncedVideos = Array.from(document.querySelectorAll("[data-sync-video]"));
 const explicitSyncNames = Array.from(
   new Set(syncedVideos.map((video) => video.dataset.syncSet).filter(Boolean))
@@ -148,6 +149,15 @@ function startSyncedVideos() {
 }
 
 startSyncedVideos();
+
+autoplayVideos.forEach((video) => {
+  video.muted = true;
+  video.playsInline = true;
+  const playPromise = video.play();
+  if (playPromise && typeof playPromise.catch === "function") {
+    playPromise.catch(() => {});
+  }
+});
 
 ["overview", "visual-flow", "workflow", "prompt", "template"].forEach((id) => {
   const section = document.getElementById(id);
