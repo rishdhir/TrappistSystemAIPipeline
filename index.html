@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TRAPPIST-1 System Pipeline R&amp;D</title>
+    <meta
+      name="description"
+      content="A BBC Pipeline R&D document covering the four-shot TRAPPIST-1 Unreal Engine to Seedance workflow."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" data-section="top">
+      <a class="brand" href="#top" aria-label="TRAPPIST-1 system pipeline R&D">
+        <span class="bbc-lockup" aria-hidden="true">
+          <span class="brand-mark">
+            <span>B</span>
+            <span>B</span>
+            <span>C</span>
+          </span>
+          <span class="studios">STUDIOS</span>
+        </span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-text">Pipeline R&amp;D</span>
+      </a>
+
+      <nav class="nav" aria-label="Page sections">
+        <a href="#overview">First Cut</a>
+        <a href="#workflow">Build</a>
+        <a href="#look-dev">Look Dev</a>
+        <a href="#video-dev">Video Dev</a>
+        <a href="#template">Prompt</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" role="img" aria-label="TRAPPIST-1 red dwarf system cinematic render"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span></span> BBC PIPELINE R&amp;D</p>
+          <h1 id="hero-title">TRAPPIST-1 system pipeline.</h1>
+          <p class="hero-copy">
+            A four-shot science-show workflow using NASA-backed data, Unreal Engine
+            previs, AI keyframes, and Seedance video generation.
+          </p>
+          <p class="hero-note">
+            Unreal controls the astronomy and camera. AI renders the cinematic finish.
+          </p>
+        </div>
+      </section>
+
+      <section id="overview" class="section featured-output searchable">
+        <div class="section-heading">
+          <p class="kicker">FIRST CUT</p>
+          <h2>The first cut of the four-shot TRAPPIST-1 sequence.</h2>
+        </div>
+
+        <figure class="hero-video">
+          <video
+            src="assets/trappist-system-final-edit.mp4?v=20260706-final-edit"
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+            preload="metadata"
+          ></video>
+          <figcaption>
+            <span>OUTPUT</span>
+            First cut assembled from the four Unreal-to-Seedance TRAPPIST shots.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="workflow" class="section alt searchable">
+        <div class="section-heading">
+          <p class="kicker">HOW IT WAS DONE</p>
+          <h2>Build the system first. Then generate the film shot.</h2>
+          <p>
+            The pipeline starts by constructing TRAPPIST-1 as a controlled Unreal
+            scene. The AI stage is downstream from that scene, so it inherits the
+            astronomy, camera move, timing, blocking, and scale.
+          </p>
+        </div>
+
+        <div class="build-grid">
+          <article class="build-copy">
+            <span>01</span>
+            <h3>Scientific source basis</h3>
+            <p>
+              The layout used public NASA and NASA-affiliated material, including
+              the NASA Exoplanet Catalog, NASA Scientific Visualization Studio,
+              NASA Exoplanet Archive, and NASA/JPL TRAPPIST visual development
+              references.
+            </p>
+            <p>
+              The planets have not been visually imaged in surface detail. Measured
+              data controls mass, radius, orbital period, orbital distance, star
+              type, and received light; cinematic visualization fills in plausible
+              surface, atmosphere, and lighting detail.
+            </p>
+          </article>
+
+          <figure class="build-media">
+            <video
+              class="poster-video"
+              poster="assets/trappist-unreal-system-capture.png?v=20260706-system"
+              controls
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Unreal Engine TRAPPIST system video slot"
+            >
+              <!-- Add the Unreal system video source here when the file is available. -->
+            </video>
+            <figcaption><span>UNREAL</span> Cinematic-readable TRAPPIST system video slot</figcaption>
+          </figure>
+        </div>
+
+        <div class="data-panel">
+          <div class="data-table">
+            <div><strong>TRAPPIST-1e orbit</strong><span>0.02925 AU</span></div>
+            <div><strong>TRAPPIST-1e period</strong><span>6.101 days</span></div>
+            <div><strong>TRAPPIST-1e radius</strong><span>0.920 Earth radii</span></div>
+            <div><strong>TRAPPIST-1e mass</strong><span>0.692 Earth masses</span></div>
+            <div><strong>Star temperature</strong><span>2566 K</span></div>
+            <div><strong>Star radius</strong><span>0.1192 solar radii</span></div>
+          </div>
+        </div>
+
+        <div class="scale-grid">
+          <article>
+            <span>TRUE REFERENCE SCALE</span>
+            <h3>Science layout</h3>
+            <p>
+              A reference map used one consistent conversion: 1 AU to roughly
+              11,644.44 meters in Unreal space. Under that scale, TRAPPIST-1e sits
+              about 340.6 meters from the red dwarf.
+            </p>
+          </article>
+          <article>
+            <span>CINEMATIC READABLE SCALE</span>
+            <h3>Shot layout</h3>
+            <p>
+              A duplicate map compressed orbital distances so the system could be
+              read in a single approach shot. TRAPPIST-1e was staged at roughly
+              65 meters and TRAPPIST-1h at roughly 137.5 meters from the star.
+            </p>
+          </article>
+          <article>
+            <span>PRODUCTION RULE</span>
+            <h3>Readable, not random</h3>
+            <p>
+              The readable version is a documentary staging layer derived from the
+              science reference, not a new scientific claim or a generic sci-fi
+              arrangement.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="look-dev" class="section searchable">
+        <div class="section-heading">
+          <p class="kicker">LOOK DEVELOPMENT</p>
+          <h2>Design the planet before asking for the shot.</h2>
+          <p>
+            The visual pass starts with TRAPPIST-1e itself: plausible surface,
+            cloud structure, colour, red-dwarf lighting, and documentary realism.
+            Concept-art references, scientific imagery, 3D previews, and AI image
+            generation can all feed this stage.
+          </p>
+        </div>
+
+        <div class="look-generation" aria-label="Look generation examples">
+          <article>
+            <div class="generation-copy">
+              <span>TRAPPIST-1e</span>
+              <h3>Planet look generation</h3>
+            </div>
+            <div class="generation-flow">
+              <figure>
+                <img src="assets/trappist-1e-public-reference.png?v=20260706-planet-ref" alt="Public science reference for TRAPPIST-1e" />
+                <figcaption><span>REFERENCE</span> NASA/JPL-style public imagery</figcaption>
+              </figure>
+              <div class="generation-arrow" aria-hidden="true"></div>
+              <div class="generation-prompt">
+                <span>PROMPT</span>
+                <p>Create a photoreal TRAPPIST-1e look with plausible rocky surface, cloud formations, muted land and ocean tones, and high-end science-documentary realism.</p>
+              </div>
+              <div class="generation-arrow" aria-hidden="true"></div>
+              <figure>
+                <img src="assets/trappist-1e-generated-output.png?v=20260706-planet-output" alt="Generated TRAPPIST-1e planet output" />
+                <figcaption><span>OUTPUT</span> Generated planet look</figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article>
+            <div class="generation-copy">
+              <span>TRAPPIST-1</span>
+              <h3>Red dwarf look generation</h3>
+            </div>
+            <div class="generation-flow">
+              <figure>
+                <img src="assets/red-dwarf-public-reference.png?v=20260706-dwarf-ref" alt="Public science reference for TRAPPIST-1 red dwarf" />
+                <figcaption><span>REFERENCE</span> NASA/GSFC/S. Wiessinger</figcaption>
+              </figure>
+              <div class="generation-arrow" aria-hidden="true"></div>
+              <div class="generation-prompt">
+                <span>PROMPT</span>
+                <p>Create a small cool red dwarf star with red-orange plasma, subtle corona, documentary realism, physically grounded light falloff, and no generic sci-fi nebula treatment.</p>
+              </div>
+              <div class="generation-arrow" aria-hidden="true"></div>
+              <figure>
+                <img src="assets/red-dwarf-generated-output.png?v=20260706-dwarf-output" alt="Generated TRAPPIST-1 red dwarf output" />
+                <figcaption><span>OUTPUT</span> Generated red dwarf look</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+
+        <div class="look-board">
+          <figure>
+            <img src="assets/trappist-shot-01-playblast-frame.png?v=20260706-playblast-shot-01" alt="Shot 1 playblast frame" />
+            <figcaption><span>PLAYBLAST</span> Shot 01</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-02-playblast-frame.png?v=20260706-playblast-shot-02" alt="Shot 2 playblast frame" />
+            <figcaption><span>PLAYBLAST</span> Shot 02</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-03-playblast-frame.png?v=20260706-playblast-shot-03" alt="Shot 3 playblast frame" />
+            <figcaption><span>PLAYBLAST</span> Shot 03</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-04-playblast-frame.png?v=20260706-playblast-shot-04" alt="Shot 4 playblast frame" />
+            <figcaption><span>PLAYBLAST</span> Shot 04</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-01-final-frame.png?v=20260706-final-shot-01" alt="Shot 1 final frame" />
+            <figcaption><span>FINAL FRAME</span> Shot 01</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-02-final-frame.png?v=20260706-final-shot-02" alt="Shot 2 final frame" />
+            <figcaption><span>FINAL FRAME</span> Shot 02</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-03-final-frame.png?v=20260706-final-shot-03" alt="Shot 3 final frame" />
+            <figcaption><span>FINAL FRAME</span> Shot 03</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/trappist-shot-04-final-frame.png?v=20260706-final-shot-04" alt="Shot 4 final frame" />
+            <figcaption><span>FINAL FRAME</span> Shot 04</figcaption>
+          </figure>
+        </div>
+
+      </section>
+
+      <section id="video-dev" class="visual-flow searchable" aria-label="TRAPPIST cinematic video development">
+        <div class="visual-flow-inner">
+          <div class="flow-heading section-heading">
+            <p class="kicker">CINEMATIC LOOK DEVELOPMENT WITH CONTROL</p>
+            <h2>Playblast, first frame, final render.</h2>
+            <p>
+              This follows the same visual workflow as the Unreal playblast pipeline:
+              the playblast controls motion, the first frame establishes the look,
+              and the AI video output renders the final shot.
+            </p>
+          </div>
+
+          <article class="flow-shot">
+            <div class="flow-shot-copy">
+              <p class="shot-number">01</p>
+              <h3>TRAPPIST-1e cinematic shot</h3>
+              <p>Orbital scale and camera layout stay fixed while surface, plasma, and atmosphere are rendered.</p>
+            </div>
+            <div class="flow-chain">
+              <figure class="media-node">
+                <video src="assets/trappist-cinematic-input.mp4?v=20260706-sh04-input" autoplay muted loop playsinline preload="metadata" data-sync-video></video>
+                <figcaption><span>INPUT</span> NASA TRAPPIST scale test</figcaption>
+              </figure>
+              <div class="node-arrow" aria-hidden="true"></div>
+              <figure class="media-node reference-node">
+                <img src="assets/trappist-cinematic-reference.png?v=20260706-sh04-reference" alt="TRAPPIST-1e cinematic reference frame" />
+                <figcaption><span>REFERENCE</span> First frame</figcaption>
+              </figure>
+              <div class="node-arrow" aria-hidden="true"></div>
+              <figure class="media-node">
+                <video src="assets/trappist-cinematic-output.mp4?v=20260706-sh04-output" autoplay muted loop playsinline preload="metadata" data-sync-video></video>
+                <figcaption><span>OUTPUT</span> AI render</figcaption>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="template" class="section template-section searchable">
+        <div class="section-heading">
+          <p class="kicker">PROMPT TEMPLATE</p>
+          <h2>The TRAPPIST video instruction block.</h2>
+        </div>
+
+        <pre class="template"><code>Use the uploaded Unreal playblast as the exact motion reference.
+The playblast controls camera movement, camera path, timing, speed, lens perspective, object position, planet scale, orbital spacing, framing, and composition.
+
+Do not change the camera move.
+Do not change the planet positions.
+Do not change the scale relationships.
+Do not rearrange the system.
+Do not add extra planets or nebulae.
+Do not cut to a new shot.
+
+Use the uploaded AI keyframe as the exact visual reference.
+Match its lighting, color, red dwarf surface detail, planet texture quality, atmosphere, contrast, and high-end science documentary look.
+
+This is the TRAPPIST-1 system: a compact red dwarf system with seven Earth-sized planets. Preserve the Unreal layout and scientific staging. The red dwarf is small, cool, and red-orange, not a Sun-like yellow star. The planets are compactly arranged, but their apparent positions and scale must follow the playblast.
+
+Add only subtle physically plausible motion:
+- gentle red dwarf plasma movement
+- small corona shimmer
+- slight atmospheric haze
+- minimal planet rotation if it does not alter the composition
+- very subtle star-field parallax
+
+Final look:
+photoreal cinematic science documentary, NASA/JPL inspired, BBC/National Geographic quality, realistic space lighting, high dynamic range, clean lensing, physically grounded, no cartoon or concept-art styling.</code></pre>
+      </section>
+
+      <section class="section closing searchable">
+        <div>
+          <p class="kicker">CLOSING NOTE</p>
+          <h2>A controlled hybrid pipeline.</h2>
+        </div>
+        <div class="closing-copy">
+          <p>
+            NASA data defines the system. Unreal Engine turns that data into
+            scale-aware previs. The playblast locks the camera. AI keyframes define
+            the target look. Seedance produces the final moving shot without being
+            asked to invent the science from scratch.
+          </p>
+          <div class="closing-meta" aria-label="Models and platforms used">
+            <div>
+              <span>Models used</span>
+              <strong>Seedance, Nano Banana Pro</strong>
+            </div>
+            <div>
+              <span>Platforms used</span>
+              <strong>Runway ML, Magnific</strong>
+            </div>
+            <div>
+              <span>Core tools</span>
+              <strong>Unreal Engine, Premiere Pro, After Effects</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>TRAPPIST-1 System Pipeline R&amp;D</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
