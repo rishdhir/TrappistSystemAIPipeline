@@ -19,7 +19,7 @@ Open `index.html` in a browser.
 ## Key Media
 
 - `assets/trappist-system-final-edit.mp4`: first cut four-shot video.
-- `assets/trappist-unreal-system-video.mp4`: optional Unreal system walkthrough video slot.
+- `assets/trappist-unreal-system-bts.mp4`: Unreal TRAPPIST system build video.
 - `assets/trappist-playblast.mp4`: Unreal playblast reference.
 - `assets/trappist-1e-public-reference.png`: TRAPPIST-1e reference image.
 - `assets/trappist-1e-generated-output.png`: generated TRAPPIST-1e output image.
